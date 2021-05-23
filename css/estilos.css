@@ -1,0 +1,324 @@
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#menu {
+
+	margin-left: 100px;
+	
+}
+
+
+.grid-container{
+	display: grid;
+	background-color: green;
+	grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+
+@media only screen and (min-width: 360px)  {
+fondo_movil {
+
+	background-color: gray;  }
+	  }
+
+
+.grid-container img {
+
+	background-color: crimson;
+	text-align: center;
+	color: white;
+	border: 1px solid black;
+	width: 100%;
+}
+
+
+
+
+#oferta{
+
+
+	
+}
+
+#oferta1 {
+
+	
+}
+
+#oferta2 {
+
+	
+}
+
+
+
+.tamano_img{
+
+	height: 200px;
+	display:block;
+	margin:auto;
+	border-style: solid;
+	margin-bottom: 50px
+}
+
+.tamano_img:hover{
+
+width: 800px;
+height: 500px;
+border-color: yellow;
+border-style: double;
+background-color: green;
+
+}
+
+.item img {
+
+	width: 200px;
+	height: 200px;
+}
+
+.item img:hover {
+
+	width: 300px;
+	height: 300px;
+}
+
+
+
+.titulos2{
+
+	color:  #ffffff;
+	text-align: center;
+	font-family: 'Architects Daughter', cursive;
+	margin-bottom: 10px;
+ 
+
+}
+
+.titulos3{
+
+	color:  #ffffff;
+	text-align: center;
+	font-family: 'Architects Daughter', cursive;
+
+}
+
+
+
+.footer1{
+
+	color:  #ffffff;
+	text-align: left;
+	font-family: 'Architects Daughter', cursive;
+
+}
+
+.footer2{
+
+color:  #ffffff;
+text-align: right;
+font-family: 'Architects Daughter', cursive;
+
+}
+
+.flex-container{	
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding: 20px;
+justify-content: center;
+align-content: stretch;
+
+
+}
+
+.item	{
+
+	background-color: white;
+	width: 200px;
+	margin: 10px;
+	font-size: 0%;
+	border: 2px solid #66ff66;
+}
+
+.item:hover {
+
+	height: 300px;
+	width: 300px;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 20% 80% ;
+
+    grid-template-areas: 
+    "header nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.header1{
+
+	grid-area: header;
+	
+}
+
+.nav2{
+	grid-area: nav;
+	border: solid;
+	text-align: center;
+	padding: 10px;
+
+}
+.nav2 .nav1 .horizontal  {
+
+	text-align: left;
+}
+
+.main1 {
+
+	grid-area: main;
+	border: solid;
+
+}
+
+.footer3 {
+
+	grid-area: footer;
+}
+
+.formulario {
+
+	align-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+ul {
+   list-style: none;
+}
+li {
+   display: inline-block;
+   position:relative;
+   font-size: 15px;
+   background-color: #ddffcc;
+	color: #ffffff;
+	padding:0 50px;
+	float: left;
+}
+
+ul li a:hover {
+   background-color: green;
+   color: white;
+   
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+body {
+
+	background-color: rgba(19,164,57,0.75);
+     font-family: Calibri,Helvetica; 
+     /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9aY12qhggaIjlwkDjuUNsUQaTJoLsAyLxg&usqp=CAU");*/
+     background-position: top center;
+     background-repeat: repeat-x; 
+     background-position: 10px 20px;
+
+
+
+}
+
+
+body div	{	
+
+color:  #ffffff;
+
+}
+
+body nav  {
+
+	color: orange;
+	text-align: center;
+
+}
+
+body nav ul li {	
+
+	color: orange;
+}
+
+
+
+body header div h1 {
+
+	 font-weight: bold; 
+	 text-transform: uppercase;
+	 text-align: center;
+	 line-height: 18px;
+	 font-family: 'Architects Daughter', cursive;
+}
+
+body header div nav ul
+{
+
+  list-style-type: square; 
+  text-align: center;
+}
+
+body main p 
+{ 
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  color:  #ffffff;
+  text-shadow: 1px 2px 2px rgba(19,164,57,0.75); }
+
+   
+}
+
+
+body main h3	{
+
+	color: darkblue;
+	text-align: center;
+}
+body main table{
+
+	color: green	;
+	text-align: left;
+}
+
+body footer {
+
+
+	border-top: 3px solid white;
+	background: linear-gradient(rgba(19,164,57,0.75), #ccc);
+}
+
+
+.logo {	
+
+width:  100%;
+height: 100%;
+
+
+}
