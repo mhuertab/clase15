@@ -1,0 +1,251 @@
+
+	.container-1 	{
+	    					display: grid;
+
+	    					/*margin: 20px auto;*/
+	    					grid-template-columns: 20% 80% ;
+	    					grid-template-rows: repeat(4, auto);
+							grid-template-areas: 
+						    "header nav nav"
+						    "widget1 widget2 widget2"
+							 "main main main"
+						    "footer footer footer";
+						}
+
+
+
+	body {
+
+				background-color: white;
+		     font-family: Calibri,Helvetica; 
+		     /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9aY12qhggaIjlwkDjuUNsUQaTJoLsAyLxg&usqp=CAU");*/
+		     background-position: top center;
+		     background-position: 10px 20px;
+
+		    	.nav1 ul 
+				{
+		   	list-style: none;
+				}
+				.nav1 li 
+				{
+
+					display: inline-block;
+		   		position:relative;
+		   		font-size: 20px;
+		   		text-decoration-color: gray;
+					text-decoration: blink;
+					padding:10px 50px;
+					float: center;
+					font-family: 'Indie Flower', cursive;
+				}
+
+				.widget1
+				{
+					grid-area: widget1;
+					padding-top: 0px;
+					border-top: solid;
+					border-color: green;
+					margin-bottom: 0px;
+
+				
+				}
+				.widget2{
+					grid-area: widget2;
+					padding: 100px;	
+					margin-left: 360px;
+					text-align: center;
+					border-top: solid;
+					border-color: green;
+					margin-bottom: 0px;				}
+
+				.caja1{
+					border-style: solid;
+					border-color: green;
+					
+					
+				}
+				h2{
+
+					font-family: 'Sigmar One', cursive;;
+				}
+
+			}	
+			.animacion{
+
+					animation: heartBeat; 
+  					animation-duration: 10s;
+  					padding: 5px;
+
+			}
+
+			.animacion2{
+
+					animation: backOutRight; 
+  					animation-duration: 3s;
+  				
+
+			}
+
+
+
+
+
+	header {
+
+
+
+	}
+					.logo {	
+						width:  100%;
+						height: 100%;
+						}
+			
+			
+				
+				.header2	{
+							grid-area: header;
+							width: auto;
+
+							
+						}
+
+				.nav2{
+						grid-area: nav;
+						text-align: center;
+						text-decoration-color: green;
+						padding: 40px;
+						background-color: white;
+						color:green;
+						
+			}
+		
+
+
+
+	main 
+
+	{
+		border-top: solid;
+		border-color: green;
+	}
+				.main1 {
+							grid-area: main;
+						
+							}
+
+				.img {	
+							background-color: crimson;
+							text-align: center;
+							align-content: center;
+							color: white;
+							border: 1px solid black;
+							width: 100%;
+
+						}
+				.tamano_img
+						{
+							height: 200px;
+							display:block;
+							margin:auto;
+							border-style: solid;
+							margin-bottom: 50px
+						}
+
+				.tamano_img:hover
+						{
+						width: 800px;
+						height: 500px;
+						border-color: yellow;
+						border-style: double;
+						background-color: green;
+						}
+
+				/*.item img {
+								width: 200px;
+								height: 200px;
+							}
+				.item img:hover {
+								width: 300px;
+								height: 300px;
+							}*/
+				.titulos2{
+								color:  #ffffff;
+								text-align: center;
+								font-family: 'Architects Daughter', cursive;
+								margin-bottom: 10px;
+ 							}
+
+ 				.titulos3{
+								color:  #ffffff;
+								text-align: center;
+								font-family: 'Architects Daughter', cursive;
+							}
+			
+		
+	footer
+
+				.footer1 {
+								grid-area: footer;
+								
+							}
+				.mapa	
+				{
+					border-top: solid;
+								border-color: green;
+				}
+		
+		.item	{
+
+				align-content: center;
+				margin-left: 400px;
+				width: 500px;
+				height: 300px;
+
+				}
+		
+
+
+/*.item	{
+
+	background-color: white;
+	width: 200px;
+	margin: 10px;
+	font-size: 0%;
+	border: 2px solid #66ff66;
+}
+
+.item:hover {
+
+	height: 300px;
+	width: 300px;
+}*/
+
+
+
+.formulario {
+
+	align-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	.container-1 	{
+	    					
+							grid-template-areas: 
+						     "header nav nav"
+						    "widget1 widget1 widget1"
+						    "widget2 widget2 widget2"
+							 "main main main"
+						    "footer footer footer";
+						}
+}
+	
+
