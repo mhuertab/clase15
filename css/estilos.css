@@ -29,22 +29,31 @@ body .nav1 li {
 body .widget1 {
   grid-area: widget1;
   padding-top: 0px;
-  border-top: solid;
-  border-color: green;
   margin-bottom: 0px;
 }
 body .widget2 {
   grid-area: widget2;
-  padding: 100px;
-  margin-left: 360px;
+  padding-left: 153px;
+  margin-left: 200px;
+  margin-top: 100px;
   text-align: center;
-  border-top: solid;
-  border-color: green;
   margin-bottom: 0px;
+}
+body .widget2 a {
+  text-decoration: none;
 }
 body .caja1 {
   border-style: solid;
   border-color: green;
+}
+body .caja1 h2:hover {
+  color: green;
+  font-size: 40px;
+}
+body .caja-productos {
+  border-style: solid;
+  border-color: green;
+  margin-left: 200px;
 }
 body h2 {
   font-family: "Sigmar One", cursive;
@@ -58,7 +67,12 @@ body h2 {
 
 .animacion2 {
   animation: backOutRight;
-  animation-duration: 3s;
+  animation-duration: 0.5s;
+}
+
+.titulo_productos {
+  text-decoration: underline;
+  padding-left: 40%;
 }
 
 .logo {
@@ -69,6 +83,7 @@ body h2 {
 .header2 {
   grid-area: header;
   width: auto;
+  height: 100%;
 }
 
 .nav2 {
@@ -82,7 +97,40 @@ body h2 {
 
 main {
   border-top: solid;
-  border-color: green;
+  border-color: lightgray;
+  margin-bottom: 30px;
+}
+
+.como_1 {
+  margin-right: 10px;
+}
+
+.como_com {
+  margin: 20px;
+  padding-left: 10%;
+  text-align: center;
+}
+.como_com h2 {
+  margin-bottom: 50px;
+}
+
+.secciones {
+  width: 1000px;
+  padding-left: 400px;
+  margin: 50px 0px 100px;
+}
+.secciones .logo_dis {
+  width: 100px;
+  height: 100px;
+}
+.secciones p {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.secciones img {
+  margin-top: 50px;
+  width: 800px;
+  height: 800px;
 }
 
 .main1 {
@@ -114,6 +162,28 @@ main {
   background-color: green;
 }
 
+.row {
+  width: auto;
+  padding: 100px;
+}
+
+.row_1 {
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 120px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 /*.item img {
 				width: 200px;
 				height: 200px;
@@ -135,40 +205,96 @@ main {
   font-family: "Architects Daughter", cursive;
 }
 
-footer .footer1 {
+footer {
+  width: 80%;
+  margin-top: 10px;
+  border-top: solid;
+  border-color: green;
+  height: auto;
+  margin: auto;
+}
+
+.footer1 {
   grid-area: footer;
 }
 
 .mapa {
-  border-top: solid;
-  border-color: green;
+  margin-left: 100px;
+  float: left;
 }
 
 .item {
-  align-content: center;
-  margin-left: 400px;
-  width: 500px;
-  height: 300px;
+  margin-left: 500px;
 }
 
-/*.item	{
-
-	background-color: white;
-	width: 200px;
-	margin: 10px;
-	font-size: 0%;
-	border: 2px solid #66ff66;
+.rss {
+  height: auto;
+  padding-left: 20%;
+}
+.rss h2 {
+  padding-left: 400px;
+}
+.rss ul {
+  margin-top: 50px;
+  padding-left: 400px;
+}
+.rss ul li {
+  display: inline-block;
+  margin: 0 0px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.rss ul li a {
+  display: block;
+  padding: 0 10px;
+  background: aquamarine;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.rss ul:hover a {
+  filter: blur(2px);
+}
+.rss ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  filter: none;
+}
+.rss ul li .facebook:hover {
+  background-color: blue;
+}
+.rss ul li .instagram:hover {
+  background-color: coral;
+}
+.rss ul li .twitter:hover {
+  background-color: aqua;
+}
+.rss .parrafofooter {
+  margin-top: 190px;
+  padding-left: 300px;
+  font-family: cursive;
+  font-style: italic;
+  font-color: gray;
 }
 
-.item:hover {
-
-	height: 300px;
-	width: 300px;
-}*/
 .formulario {
   align-content: center;
   text-align: center;
   padding: 10px;
+  padding: 15px;
+}
+
+form {
+  background-color: lightgray;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+form .form_cl {
+  border: solid 1px #ccc;
 }
 
 a {
