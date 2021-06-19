@@ -1,17 +1,25 @@
-.container-1 {
-  display: grid;
-  /*margin: 20px auto;*/
-  grid-template-columns: 20% 80%;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header nav nav" "widget1 widget2 widget2" "main main main" "footer footer footer";
-}
-
 body {
   background-color: white;
   font-family: Calibri, Helvetica;
   /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9aY12qhggaIjlwkDjuUNsUQaTJoLsAyLxg&usqp=CAU");*/
-  background-position: top center;
-  background-position: 10px 20px;
+  /*background-position: top center;
+  background-position: 10px 20px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*.widget2{
+  	grid-area: widget2;
+  	padding-left: 153px;	
+  	margin-left: 200px;
+  	margin-top: 100px;
+  	margin-left: auto;
+  	margin-right:auto ;
+  	text-align: center;*/
+}
+body .container-1 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header nav nav" "widget1 widget2 widget2" "main main main" "footer footer footer";
 }
 body .nav1 ul {
   list-style: none;
@@ -31,24 +39,19 @@ body .widget1 {
   padding-top: 0px;
   margin-bottom: 0px;
 }
-body .widget2 {
-  grid-area: widget2;
-  padding-left: 153px;
-  margin-left: 200px;
-  margin-top: 100px;
-  text-align: center;
-  margin-bottom: 0px;
-}
-body .widget2 a {
+body a {
   text-decoration: none;
 }
 body .caja1 {
   border-style: solid;
   border-color: green;
+  width: 40em;
+  text-decoration: none;
 }
 body .caja1 h2:hover {
   color: green;
   font-size: 40px;
+  text-decoration: none;
 }
 body .caja-productos {
   border-style: solid;
@@ -99,10 +102,20 @@ main {
   border-top: solid;
   border-color: lightgray;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .como_1 {
   margin-right: 10px;
+}
+.como_1 img {
+  margin: 50px;
+}
+
+img .trans:hover {
+  filter: opacity(0.5);
 }
 
 .como_com {
@@ -111,7 +124,7 @@ main {
   text-align: center;
 }
 .como_com h2 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .secciones {
@@ -168,17 +181,20 @@ main {
 }
 
 .row_1 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .product img {
   width: 120px;
-  margin-left: 60px;
-  margin-right: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
 }
 
 .card {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   background-color: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -301,10 +317,51 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
+	.container-1 	{
+
+							grid-template-areas: 
+						     "header nav nav"
+						    "widget1 widget1 widget1"
+						    "widget2 widget2 widget2"
+							 "main main main"
+						    "footer footer footer";
+						}
+}*/
+@media (min-width: 576px) {
+  /*.widget2
+  	{
+
+      padding-left: 0px; 
+      margin-left: 0;
+      margin-top: 0; 
+      text-align: center;
+      margin-bottom: 0px;
+  }*/
   .container-1 {
     grid-template-areas: "header nav nav" "widget1 widget1 widget1" "widget2 widget2 widget2" "main main main" "footer footer footer";
   }
+}
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  .container-1 {
+    display: grid;
+    /*margin: 20px auto;*/
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header nav nav" "widget1 widget2 widget2" "main main main" "footer footer footer";
+  }
+
+  /*.widget2{
+  	grid-area: widget2;
+  	/*padding-left: 153px;	
+  	margin-left: 200px;
+  	margin-top: 100px;
+  	margin-left: auto;
+  	margin-right:auto ;
+  	text-align: center;
+
+
+  }*/
 }
 
 /*# sourceMappingURL=estilos.css.map */
