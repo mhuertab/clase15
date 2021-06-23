@@ -353,7 +353,7 @@ a {
 
   .widget2 {
     grid-area: widget2;
-    width: 610px;
+    width: 200px;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
